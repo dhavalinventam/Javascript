@@ -1,0 +1,77 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "age": 25,
+        "address": {
+            "state": "Gujarat",
+            "city": "Surat"
+        }
+    },
+    {
+        "firstName": "rahul",
+        "lastName": "go",
+        "age": 10,
+        "address": {
+            "state": "Gujarat",
+            "city": "baroda"
+        }
+    },
+    {
+        "firstName": "rahul",
+        "lastName": "go",
+        "age": 30,
+        "address": {
+            "state": "Gujarat",
+            "city": "baroda"
+        }
+    },
+    {
+        "firstName": "arr",
+        "lastName": "ar",
+        "age": 30,
+        "address": {
+            "state": "Rajasthan",
+            "city": "Jaipur"
+        }
+    },
+    {
+        "firstName": "hgf",
+        "lastName": "lkk",
+        "age": 18,
+        "address": {
+            "state": "Gujarat",
+            "city": "Surat"
+        }
+    },
+    {
+        "firstName": "ravi",
+        "lastName": "rv",
+        "age": 5,
+        "address": {
+            "state": "Rajasthan",
+            "city": "kota"
+        }
+    },
+    {
+        "firstName": "abc",
+        "lastName": "xy",
+        "age": 50,
+        "address": {
+            "state": "Rajasthan",
+            "city": "AjMer"
+        }
+    } 
+]
+​
+//  QUE
+// create function for all
+// 1. get all person from state gujarat
+// 2. get all person from state gujarat and city Surat
+// 3. get all person from state gujarat and and age lessthen equal to 20
+// 4. get all person from state Rajasthan and or age gretrthen equal to 30
+// 5. get 2 person from baroda
+// 6. add full name in all person (firstName + lastName )
+// 7. search in all object if any value matched return all object
+​
+// note : if data not found return "data not found"

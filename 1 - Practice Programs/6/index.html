@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+    <script>
+         const userData = [
+        {
+          firstName: "John",
+          lastName: "Doe",
+          age: 25,
+          address: {
+            state: "Gujarat",
+            city: "Surat",
+          },
+        },
+        {
+          firstName: "Mehul",
+          lastName: "go",
+          age: 10,
+          address: {
+            state: "Gujarat",
+            city: "baroda",
+          },
+        },
+        {
+          firstName: "rahul",
+          lastName: "go",
+          age: 30,
+          address: {
+            state: "Gujarat",
+            city: "baroda",
+          },
+        },
+        {
+          firstName: "arr",
+          lastName: "ar",
+          age: 30,
+          address: {
+            state: "Rajasthan",
+            city: "Jaipur",
+          },
+        },
+        {
+          firstName: "hgf",
+          lastName: "lkk",
+          age: 18,
+          address: {
+            state: "Gujarat",
+            city: "Surat",
+          },
+        },
+        {
+          firstName: "ravi",
+          lastName: "rv",
+          age: 5,
+          address: {
+            state: "Rajasthan",
+            city: "kota",
+          },
+        },
+        {
+          firstName: "abc",
+          lastName: "xy",
+          age: 50,
+          address: {
+            state: "Rajasthan",
+            city: "AjMer",
+          },
+        },
+      ];
+        
+      let fullname = userData.filter((items)=>{
+        let fname = items.firstName;
+        let lname = items.lastName;
+        console.log("FullName:-", fname + " " + lname)
+      })
+
+
+    </script>
+</head>
+<body>
+    <!-- add full name in all person (firstName + lastName ) -->
+</body>
+</html>
