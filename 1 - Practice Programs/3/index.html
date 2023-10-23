@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Program</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- Program 3 :- get all person from state gujarat and and age lessthen equal to 20 -->
+    <div id="demo"></div>
 
     <script>
-        const userData = [
+      const userData = [
         {
           firstName: "John",
           lastName: "Doe",
@@ -76,17 +76,21 @@
         },
       ];
 
-    //   console.log("userdata :- ", userData);
-        let personStateAge = userData.filter((items)=>{
+      //   console.log("userdata :- ", userData);
+      let personStateAge = userData.filter((items) => {
         // console.log(items);
         let userState = items.address.state;
         // console.log(userState);
         let userAge = items.age;
         // console.log(userAge);
-        if (userState == 'Gujarat' && userAge <= 20) {
-            console.log("username :- " , items.firstName);
+        if (userState == "Gujarat" && userAge <= 20) {
+          console.log("username :- ", items.firstName);
+          return items.firstName;
         }
-    });
+      });
+
+      document.getElementById("demo").innerHTML =
+        JSON.stringify(personStateAge);
     </script>
-</body>
+  </body>
 </html>
