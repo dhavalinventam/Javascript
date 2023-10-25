@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Program</title>
-    
-  </head>
-  <body>
-    <!-- add full name in all person (firstName + lastName ) -->
-    <div id="demo"></div>
-
     <script>
+      // Example array of objects
       const userData = [
         {
           firstName: "John",
@@ -77,19 +72,24 @@
         },
       ];
 
-      const newArray = userData.map(obj => {
-        let fname = obj.firstName;
-        let lname = obj.lastName;
-        console.log("FullName:-", fname + " " + lname);
-        // return fname + " " + lname;
-        return {
-            ...obj, // Spread the existing object properties
-            FullName: fname + " " + lname // Add the new key-value pair
-        };
+      // create a new object
+      const newObj = [];
+
+      // Adding a new key 'age' to each object without using map()
+      userData.forEach((obj) => {
+        var fname = obj.firstName;
+        var lname = obj.lastName;
+        // console.log("FullName:-", fname + " " + lname);
+        obj.FullName = fname + " " + lname; // Add the new key-value pair
+        newObj.push(obj);
+        console.log(newObj);
       });
 
-      console.log(newArray);
-      document.getElementById("demo").innerHTML = JSON.stringify(newArray);
+      // Logging the updated array
+      //   console.log(userData);
     </script>
+  </head>
+  <body>
+    <!-- Program 9 :- how to add new key in array of objects javascript without map() method using foreach loop -->
   </body>
 </html>

@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Program</title>
-    
-  </head>
-  <body>
-    <!-- add full name in all person (firstName + lastName ) -->
-    <div id="demo"></div>
-
     <script>
       const userData = [
         {
@@ -77,19 +71,15 @@
         },
       ];
 
-      const newArray = userData.map(obj => {
-        let fname = obj.firstName;
-        let lname = obj.lastName;
-        console.log("FullName:-", fname + " " + lname);
-        // return fname + " " + lname;
-        return {
-            ...obj, // Spread the existing object properties
-            FullName: fname + " " + lname // Add the new key-value pair
-        };
+      const newArray = userData.push((items) => {
+        
       });
+        // userData.push("Dhaval");
+        // console.log(userData);
 
-      console.log(newArray);
-      document.getElementById("demo").innerHTML = JSON.stringify(newArray);
     </script>
+  </head>
+  <body>
+    <!-- Program 10 :- how to add new key in array of objects javascript without map() method using Push Method -->
   </body>
 </html>

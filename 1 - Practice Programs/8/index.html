@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+    <script>
+        // Example array of objects
+        const arrayOfObjects = [
+        { id: 1, name: 'Alice' },
+        { id: 2, name: 'Bob' },
+        { id: 3, name: 'Charlie' }
+        ];
+
+        // Adding a new key 'age' to each object using the map() method
+        const newArray = arrayOfObjects.map(obj => {
+        return {
+            ...obj, // Spread the existing object properties
+            name: 30 // Add the new key-value pair
+        };
+        });
+
+        // Logging the new array
+        console.log(newArray);
+    </script>
+</head>
+<body>
+    <!-- Program 8 :- how to add new key in array of objects javascript -->
+</body>
+</html>
