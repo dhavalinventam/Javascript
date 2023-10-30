@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const newArr = [
+            {
+                "firstName": "John",
+                "lastName": "Doe",
+                "age": 25,
+                "address": {
+                    "state": "Gujarat",
+                    "city": "Surat"
+                }
+            },
+            {
+                "firstName": "arr",
+                "lastName": "ar",
+                "age": 30,
+                "address": {
+                    "state": "Rajasthan",
+                    "city": "Jaipur"
+                }
+            },
+            {
+                "firstName": "rahul",
+                "lastName": "go",
+                "age": 10,
+                "address": {
+                    "state": "Gujarat",
+                    "city": "baroda"
+                }
+            }, {
+                "firstName": "rahul",
+                "lastName": "go",
+                "age": 10,
+                "address": {
+                    "state": "BR",
+                    "city": "baroda"
+                }
+            }
+        ]
+
+        // const result =[]
+        // console.log("🚀 - result: OR", result)
+
+        // for (let index = 0; index < newArr.length; index++) {
+        //     console.log("index", index);
+        //     const element = newArr[index];
+        //     debugger;
+        //     if(element.address.state == "Rajasthan") {
+        //         console.log('element: ', element)
+        //         result.push(element)
+
+        //     }
+
+        // }
+        // console.log("🚀 - result:", result)
+
+        // const result = []
+
+        // newArr.forEach((element, index) => {
+        //     console.log("🚀 - newArr.forEach - index:", index)
+        //     console.log("🚀 - newArr.forEach - element:", element)
+        //     debugger
+        //     if (element.address.state == "Rajasthan") {
+        //         console.log('element: ', element)
+        //         result.push(element)
+
+        //     }
+        // });
+        // console.log("🚀 - result:", result)
+
+        // const result = newArr.filter((item, index) => {
+        //     console.log("🚀 - result - index:", index, item)
+        //     debugger
+        //     if (item.address.state == "Rajasthadfjsdgn") {
+        //         console.log('item: ', item)
+        //         return true
+        //     }
+        // })
+        // console.log("🚀 - result - result:", result)
+
+        // const r1 = newArr.find((i, idx) => {
+        //     console.log("🚀 - newArr.find - i,idx:", i, idx)
+        //     debugger
+        //     // return true
+        //     if (i.address.state == "Rajasthan") {
+        //         console.log('i: ', i)
+        //         return true
+        //     }
+        // })
+        // console.log("🚀 - r1 - r1:", r1)
+
+        // const nArr2 = newArr.map((item, index) => {
+        //     console.log("🚀 - newArr.map - item,index:", item, index)
+        //     debugger
+        //     if (item.address.state == "Rajasthan") {
+
+        //         return { ...item, rajsthani: true }
+        //     } else if (item.address.state == "Gujarat") {
+        //         return { ...item, gujarati: true }
+        //     }
+        //     else return { ...item, unknown: true }
+        //     debugger
+        // })
+        // console.log("🚀 - nArr2 - nArr2:", nArr2)
+
+        // console.log("🚀 - newArr: OR", newArr)
+        // newArr.pop()
+        // debugger
+        // // console.log("🚀 - o1:", o1)
+        // console.log("🚀 - newArr: uop", newArr)
+        const obj = [{
+            "id": 1,
+            "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 2,
+            "title": "Mens Casual Premium Slim Fit T-Shirts ",
+            "price": 22.3,
+            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+            "category": "men's clothing",
+            "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "rating": {
+                "rate": 4.1,
+                "count": 259
+            }
+        }]
+
+        // let passCountRate = obj.filter((items) => {
+        //     let passRate = items.rating.rate;
+        //     // console.log("Rate :-", passRate);
+        //     let passCount = items.rating.count;
+        //     // console.log("Count :-", passCount);
+        //     // let passTitle = items.title;
+        //     console.log("passRate == 'rate'", passRate == 'rate');
+        //     console.log("passCount == 'count'", passCount == 'count');
+        //     debugger
+        //     if (passRate == 3.9 && passCount == 120) {
+        //         console.log("Hii");
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // })
+        // console.log("aaa", passCountRate);
+
+        // logical AND , logical OR 
+
+        // &&             || 
+
+        // if(a == 120 && b == 20 && c== 30){
+
+        // }
+
+        // function fun1(a, b = 2)(a + b)
+        const fun1 = (a, b = 2) => (a + b)
+
+        console.log("FRR", fun1(3, 6))
+        // fun1("a", true)
+        // fun1([], () => { })
+
+        // fun1(R1 = "second", a = "first")
+
+        const check = (x, y) => {
+            console.log("🚀 - check -", { x, y })
+            debugger
+            if (x === y) {
+                console.log("Both are same");
+            } else if (x == y) {
+                console.log("Both are same, with diff data tye");
+            } else {
+                console.log("both are no same");
+            }
+
+            const isValid = 0
+
+            if (isValid) {
+                console.log("Valid");
+            } else {
+                console.log("not valid");
+            }
+
+        }
+        // check(5, '5')
+        // check(5, 9)
+        // check(5, '9')
+
+
+        const findPerson = (state) => {
+            debugger
+            console.log("🚀 - findPerson - state:", state)
+            const res = newArr.filter((item, index) => {
+                if (item.address.state === state) return true
+            })
+            console.log("🚀 - res - res:", res)
+            return res
+
+        }
+
+
+        const rej = findPerson("Rajasthan")
+        console.log("🚀 - rej:", rej)
+
+        const guju = findPerson("Gujarat")
+        console.log("🚀 - guju:", guju)
+
+
+
+    </script>
+</body>
+
+</html>
