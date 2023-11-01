@@ -63,57 +63,40 @@
       const storeData = projectData.data;
 
       const resTechnology = (technologies) => {
-        // debugger
-        const result = storeData.filter((items, index) => {
-          let passechnology = items.technologies;
-          console.log("Hello" , passechnology);
 
-          // For Method
-          for (let i = 0; i < passechnology.length; i++) {
-              // console.log("index", i);
-              const element = passechnology[i];
-              // debugger
-            //    console.log("Value" , element)
+        const blankArr = [];
 
-              const techName = element.name;
-            //   console.log("Tech Name :-" , techName);
+        // console.log("aaaa");
+        for (let i = 0; i < storeData.length; i++) {
+          const element = storeData[i];
+          // console.log("object data", element);
 
-              if (technologies == techName) {
-                  return true;
-              } else {
-                  return false;
-              }
+          const techName = element.technologies;
+          // console.log("hhhhh", techName);
+
+          for (let j = 0; j < techName.length; j++) {
+            // debugger;
+            const elementtwo = techName[j];
+            console.log("bbbbb", elementtwo);
+            // debugger;
+            if (technologies == elementtwo.name) {
+              blankArr.push(element)
+            }
           }
-
-          // Find Method
-        //   const r1 = passechnology.find((i, idx) => {
-        //     // console.log("🚀find -:", i)
-        //     const techName = i.name;
-        //     // console.log("Tech Name :-" , techName);
-        //     // debugger;
-        //     if (technologies == techName) {
-        //       return true;
-        //     }
-        //   });
-        //   return r1;
-
-
-
-        });
-        return result;
+          
+        }
+        return blankArr;
       };
-      // debugger
+
       const a1 = resTechnology("React JS");
       // debugger
       console.log("Final", a1);
-
-
-
-
-
     </script>
   </head>
   <body>
-    <!-- Program 1 :- create function, pass technology name, find all project which contain passed technology  -->
+    <code>
+      Program 2 :- create function, pass technology name, find all project which
+      contain passed technology Note :- Two For loop
+    </code>
   </body>
 </html>
